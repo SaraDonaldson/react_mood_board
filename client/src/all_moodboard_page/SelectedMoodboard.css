@@ -1,0 +1,35 @@
+.displayArea {
+  width: 100%;
+  height: 75vh;
+  position: relative;
+  background-color: #fcf9d2;
+}
+
+.displayArea img {
+  /* max-height: 100%; */
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  max-height: 24%;
+  max-width: 50%;
+  cursor:grab; 
+}
+div.mb-image {
+  overflow: hidden;
+  position: absolute;
+  margin: auto;
+  max-height: 24%;
+  max-width: 50%;
+  cursor:grab;
+}
+
+p {
+  cursor:grab; 
+}
+
+.selected-image {
+  border: 2px solid blue;
+}
+.selected-text{
+  border: 1px solid green;
+}

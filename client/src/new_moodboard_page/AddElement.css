@@ -1,0 +1,48 @@
+
+
+pop-up-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+button{
+  max-width: 100px;
+  height: 50px;
+}
+
+.pop-up button{
+ border:none;
+}
+.background-pop-up button{
+  border: none;
+}
+
+.formlabel1 {
+  /* display: block; */
+  display:grid;
+  margin-block: 10px;
+  font-size: 17px;
+ 
+}
+.formlabel2 {
+  margin-right: 25px;
+  margin-bottom: 2px;
+  color: darkgreen;
+}
+
+.radioButton {
+  margin-right: 5px;
+}
+.radioButtonAlign {
+  text-align: left;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 60px;
+}
+.addButton {
+  color: darkgreen;
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom-color: black;
+}
+

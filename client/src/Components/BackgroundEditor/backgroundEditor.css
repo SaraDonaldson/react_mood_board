@@ -1,0 +1,67 @@
+*, *::before, * ::after {
+    box-sizing: border-box;
+}
+.bg-ed-container h1{
+    max-height: 30px;
+}
+
+
+.bg-ed-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr auto;    
+    grid-template-areas: 
+    "grid sidebar";
+    height: 90%;
+    width: 100%;
+}
+
+
+.bg-ed-sidebar {
+    grid-area: sidebar;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: 20px;
+}
+.bg-ed-sidebar button {
+    cursor: pointer;
+    width: 100%;
+    max-width:135px;
+    transition: 0.4s;
+   }
+ 
+
+
+.bg-ed-sidebar button:hover {
+ background-color: grey;
+ color:white;
+ font-weight: 600;
+}
+
+button.active {
+    background-color:grey;
+    color:white;
+    font-weight: 600;
+   }   
+
+button.save-btn{
+    display:flex;
+    align-items: center;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 140px;
+    background-color: blue;
+    color:white;
+   }
+
+.color-picker{
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
