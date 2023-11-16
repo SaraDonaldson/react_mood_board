@@ -1,0 +1,13 @@
+.my-boards{
+
+    
+}
+.my-boards-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.my-boards-card{
+    width: 150px;
+    background-color: rgb(110, 110, 110) !important;
+    height:150px;
+}

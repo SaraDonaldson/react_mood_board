@@ -1,4 +1,6 @@
 import React from 'react'
+import MyBoards from '../Components/Dashboard/MyBoards'
+import '../Styles/myBoards.css'
 
 
 
@@ -10,7 +12,11 @@ let userId= localStorage.getItem("userId")
 
 
   return (
-    <div>UserDashboard {userId}</div>
+    <div>UserDashboard {userId}
+    
+    <MyBoards/>
+    
+    </div>
   )
 }
 
