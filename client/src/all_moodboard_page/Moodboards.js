@@ -2,16 +2,11 @@ import React from "react";
 import SelectedMoodboard from "./SelectedMoodboard";
 import ThumbGrid from "./ThumbGrid";
 import "./Moodboards.css";
-import { Link } from "react-router-dom";
+
 
 const Moodboards = (props) => {
   return (
     <div>
-      <nav className="navbar">
-        <Link className="navButton" to="/">
-          Home
-        </Link>
-      </nav>
       <h3>All Moodboards</h3>
       <div className="container text-center">
         <div className="row">
