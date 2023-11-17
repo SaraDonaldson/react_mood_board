@@ -93,11 +93,6 @@ const NewMoodboard = (props) => {
 
   return (
     <div>
-      <nav className="navbar">
-        <Link className="navButton" to="/">
-          Home
-        </Link>
-      </nav>
 
       <div className="container text-center">
         <h3>New Moodboard</h3>

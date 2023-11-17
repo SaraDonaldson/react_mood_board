@@ -6,6 +6,8 @@ import Moodboards from "./all_moodboard_page/Moodboards";
 import NewMoodboard from "./new_moodboard_page/NewMoodboard";
 import UserDashboard from "./Pages/UserDashboard";
 import Login from "./Pages/Login";
+import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
 
 function App() {
   let [moodboards, setMoodboards] = useState([]);
@@ -53,14 +55,13 @@ function App() {
   return (
     <div className="App" >
       
+      <Navbar />
       <Routes>
         {/* <Route path="*" element={<HomePage moodboards={moodboards} />}></Route> */}
-       
+    
         <Route path="/" element={<Login />}/>
         <Route path="/dashboard" element={<UserDashboard />}/>
-        <Route
-          path="/moodboards"
-          element={
+        <Route path="/moodboards" element={
             <Moodboards
               moodboards={moodboards}
               board={board}
@@ -73,8 +74,9 @@ function App() {
           element={<NewMoodboard board={board} addMoodboardCb={addMoodboard} />}
         ></Route>
        
-
+      
       </Routes>
+      <Footer />
     </div>
   );
 }
